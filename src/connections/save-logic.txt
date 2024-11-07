@@ -1,0 +1,19 @@
+ELmenteni kivánt elemek:
+
+    - PLAYER-MODEL: (which includes:)
+
+        name: 'string',
+        maxHp: number,
+        currentHp: number,
+        maxEnergy: number,
+        currentEnergy: number,
+        energyRecharge: number,
+        baseDamage: number,
+        minDamageMultiplier: number,
+        maxDamageMultiplier: number,
+        defendMultiplier: number,
+
+    - GAMESTATE: (which includes:)
+        
+        defeated opponents
+        current avaible opponent

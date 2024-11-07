@@ -1,0 +1,44 @@
+{
+  "backgroundImages": [
+    {
+      "backgroundImagePath": "/assets/img/backgrounds/background.gif"
+    }
+  ],
+  "effectImages": [
+    {
+      "defendImagePath": "/assets/img/effects/defend.png"
+    }
+  ],
+  "heroImages": [
+    {
+      "heroImagePath": "/assets/img/hero/hero.gif",
+      "heroDefImagePath": "/assets/img/hero/hero-def.gif",
+      "heroEnergyImagePath": "/assets/img/hero/hero-energy-re.gif",
+      "heroAttackImagePath": "/assets/img/hero/hero-attack.gif",
+      "heroWinsImagePath": "/assets/img/hero/hero-wins.gif",
+      "heroWinsExtendImagePath": "/assets/img/hero/hero-wins-extend.gif"
+    }
+  ],
+  "katarinaImages": [
+    {
+      "katarinaImagePath": "/assets/img/katarina/katarina.gif",
+      "katarinaDefImagePath": "/assets/img/katarina/katarina-def.gif",
+      "katarinaEnergyImagePath": "/assets/img/katarina/katarina-energy-re.gif",
+      "katarinaAttackImagePath": "/assets/img/katarina/katarina-attack.gif",
+      "katarinaWinsImagePath": "/assets/img/katarina/katarina-wins.gif",
+      "katarinaWinsExtendImagePath": "/assets/img/katarina/katarina-wins-extend.gif",
+      "katarinaDefeatedImagePath": "/assets/img/katarina/katarina-defeated.png"
+    }
+  ],
+  "lucyImages": [
+    {
+      "lucyImagePath": "/assets/img/lucy/lucy.gif",
+      "lucyDefImagePath": "/assets/img/lucy/lucy-def.gif",
+      "lucyEnergyImagePath": "/assets/img/lucy/lucy-energy-re.gif",
+      "lucyAttackImagePath": "/assets/img/lucy/lucy-attack.gif",
+      "lucyWinsImagePath": "/assets/img/lucy/lucy-wins.gif",
+      "lucyWinsExtendImagePath": "/assets/img/lucy/lucy-wins-extend.gif",
+      "lucyDefeatedImagePath": "/assets/img/lucy/lucy-defeated.png"
+    }
+  ]
+}

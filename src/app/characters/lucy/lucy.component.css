@@ -1,0 +1,55 @@
+/* Attack animation */
+.attack-animation {
+    animation: attack-animation 0.5s forwards;
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    flex-direction: column;
+    top: 5%;
+    right: 1;
+    bottom: 1;
+    left: 13%;
+    margin: auto;
+    z-index: 2;
+}
+
+.lucyFix {
+    margin: 28% 0%;
+}
+
+@keyframes attack-animation {
+    0% { margin: 0% 50%;}
+    5% { margin: 0% 40%;}
+    10% { margin: 0% 30%;}
+    15% { margin: 0% 20%;}
+    20% { margin: 0% 10%;}
+    25% { margin: 0% 5%;}
+    30% { margin: 0% 4%;}
+    35% { margin: 0% 3%;}
+    40% { margin: 0% 2%;}
+    45% { margin: 0% 1%;}
+    50% {margin: 0% 0%; }
+    75% {margin: 0% -5%; }
+    100% {margin: 0% -10%; }
+}
+
+/* Defend animation */
+.defend-animation {
+    animation: defend-animation 0.5s forwards;
+}
+
+@keyframes defend-animation {
+    0% { margin: 46% -40%; }
+    100% { margin: 46% -40%; }
+}
+
+/* Energy recharge animation */
+.energy-recharge-animation {
+    animation: energy-recharge-animation 0.5s forwards;
+}
+
+@keyframes energy-recharge-animation {
+    0% { margin: 24% -2%; }
+    100% { margin: 24% -2%; }
+}

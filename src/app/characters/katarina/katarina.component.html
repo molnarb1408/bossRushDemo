@@ -1,0 +1,27 @@
+<div class="d-flex align-items-end flex-column fixed-top m-5 z-2">
+    <!-- életjelző csík -->
+    <div class="progress rounded-1 position-fixed top-0 my-3">
+        <div id="enemyHp" class="progress-bar bg-danger" role="progressbar"
+            [style.width.%]="(katarina.currentHp / katarina.maxHp) * 100" attr.aria-valuenow="{{ katarina.currentHp }}"
+            aria-valuemin="0" attr.aria-valuemax="{{ katarina.maxHp }}">{{ katarina.currentHp }}/{{ katarina.maxHp }} HP
+        </div>
+    </div>
+    <!-- energiacsík -->
+    <div class="progress rounded-1 my-4 position-fixed top-0 my-5">
+        <div id="enemyEnergy" class="progress-bar bg-info" role="progressbar"
+            [style.width.%]="(katarina.currentEnergy / katarina.maxEnergy) * 100"
+            attr.aria-valuenow="{{ katarina.currentEnergy }}" aria-valuemin="0"
+            attr.aria-valuemax="{{ katarina.maxEnergy }}">{{ katarina.currentEnergy }}/{{ katarina.maxEnergy }} Energy
+        </div>
+    </div>
+    <!-- defendUp -->
+    <div class="py-4 position-absolute">
+        <img id="defendUpEnemy" [src]="GS.jsonService.effectImages['defendImagePath']"
+            *ngIf="katarina.isDefending == true">
+    </div>
+    <!-- kép -->
+    <div>
+        <img id="enemyImg" [src]="GS.jsonService.katarinaImages['katarinaImagePath']" class="enemyProfile p-3">
+        <p id="FloatingCombatTextEnemy" class="FloatingCombatText text-warning FCTenemy"></p>
+    </div>
+</div>

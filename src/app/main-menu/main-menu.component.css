@@ -1,0 +1,43 @@
+body {
+    background-color: aqua;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Uncial Antiqua', cursive;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-container {
+    text-align: center;
+    color: rgb(101, 155, 190);
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.menu-list {
+    padding: 0;
+}
+
+.menu-item {
+    display: block;
+    padding: 10px;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    color: rgb(28, 146, 150);
+}

@@ -1,0 +1,43 @@
+<div class="d-flex align-items-start flex-column fixed-top m-5 z-2">
+    <!-- Hero életjelző csík -->
+    <div class="progress rounded-1 position-fixed top-0 my-3">
+        <div id="heroHp" role="progressbar" class="progress-bar bg-danger" role="progressbar"
+            [style.width.%]="(hero.currentHp / hero.maxHp) * 100" attr.aria-valuenow="{{ hero.currentHp }}"
+            aria-valuemin="0" attr.aria-valuemax="{{ hero.maxHp }}">{{ hero.currentHp }}/{{ hero.maxHp }} HP
+        </div>
+    </div>
+    <!-- Hero energiacsík -->
+    <div class="progress rounded-1 my-4 position-fixed top-0 my-5">
+        <div id="heroEnergy" class="progress-bar bg-info" role="progressbar"
+            [style.width.%]="(hero.currentEnergy / hero.maxEnergy) * 100" attr.aria-valuenow="{{ hero.currentEnergy }}"
+            aria-valuemin="0" attr.aria-valuemax="{{ hero.maxEnergy }}">{{ hero.currentEnergy }}/{{ hero.maxEnergy }}
+            Energy</div>
+    </div>
+    <!-- Hero defendUp -->
+    <div class="py-4 position-absolute">
+        <img id="defendUpHero" [src]="GS.jsonService.effectImages['defendImagePath']" *ngIf="hero.isDefending == true">
+    </div>
+    <!-- Hero kép -->
+    <div>
+        <img id="charImg" [src]="GS.jsonService.heroImages['heroImagePath']" class="heroProfile p-3">
+        <p id="FloatingCombatTextHero" class="FloatingCombatText text-warning FCThero"></p>
+    </div>
+
+</div>
+
+<!-- Hero gombok -->
+
+<div class="button-group position-fixed bottom-0 m-4 z-3">
+    <div id="tooltipAttack" class="position-relative start-50 my-3"></div>
+    <div id="tooltipDefend" class="position-relative start-50 my-3"></div>
+    <div id="tooltipEnergy" class="position-relative start-50 my-3"></div>
+
+    <button id="attackBtn" (click)="attack()" [disabled]="!hero.isTurnActive" (mouseout)="tooltipAttackBtnHide()"
+        (mouseover)="tooltipAttackBtn()" type="button" class="btn btn-danger me-2 fw-bold text-black">Attack</button>
+    <button id="defendBtn" (click)="defend()" [disabled]="!hero.isTurnActive || hero.isDefending"
+        (mouseout)="tooltipDefendBtnHide()" (mouseover)="tooltipDefendBtn()" type="button"
+        class="btn btn-warning me-2 fw-bold text-black">Defend</button>
+    <button id="energyBtn" (click)="rechargeEnergy()" [disabled]="!hero.isTurnActive"
+        (mouseout)="tooltipEnergyBtnHide()" (mouseover)="tooltipEnergyBtn()" type="button"
+        class="btn btn-info fw-bold text-black">Energy</button>
+</div>
